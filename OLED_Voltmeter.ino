@@ -3,6 +3,8 @@
  * requires U8g2 library by oliver
  * https://github.com/olikraus/u8g2/wiki/
  * 
+ * V1.0
+ * 
  * Wiring:
  * OLED -> Arduino Nano
  * GND -> GND
@@ -137,20 +139,7 @@ void loop(void)
     display_update();
     next_display_update = millis() + DISPLAY_UPDATE_INTERVAL; 
   }
-  
-
-  
+    
   //LowPower.idle(SLEEP_1S, ADC_OFF, TIMER2_OFF, TIMER1_OFF, TIMER0_OFF, SPI_OFF, USART0_OFF, TWI_OFF);
 
-  /*
-  delay(1000);
-
-
-  //display_V(13.8, char(ENGINE_SYMBOL) );
-  analog_read(ENGINE_ANALOG_PIN);
-
-  //LowPower.idle(SLEEP_1S, ADC_OFF, TIMER2_OFF, TIMER1_OFF, TIMER0_OFF, SPI_OFF, USART0_OFF, TWI_OFF);
-  delay(1000);
-
-  */
 }
